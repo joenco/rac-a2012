@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	<category>
+		<pattern>HOLA</pattern>
+		<template>
+			<random>
+				<li>Hola sr(a).</li>
+				<li>Como estas?</li>
+			</random>
+		</template>
+	</category>
+	<category>		
+		<pattern>* COMO ESTAS</pattern>
+		<template>
+			<random>
+				<li>Yo bien y tu?</li>
+				<li>Estresado =)</li>
+				<li>Muy bien sr(a).</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>ME LLAMO *</pattern>
+		<template>MUCHO GUSTO </template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<template>NO ENTIENDO EL TEXTO</template>
+	</category>          
+</aiml>
