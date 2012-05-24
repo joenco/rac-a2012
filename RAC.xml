@@ -3,7 +3,51 @@
 		<pattern>LOAD AIML</pattern>
 		<template>
 			<learn>aiml/saludo.aiml</learn>
-			<learn>aiml/despedida.aiml</learn>
+			<learn>adverbios.aiml</learn>
+			<learn>aleatorio.aiml</learn>
+			<learn>animales.aiml</learn>
+			<learn>aparienciaFisica.aiml</learn>
+			<learn>astrologia.aiml</learn>
+			<learn>atributosPsicologicos.aiml</learn>
+			<learn>ciencia.aiml</learn>
+			<learn>cine.aiml</learn>
+			<learn>conectores.aiml</learn>
+			<learn>deporte.aiml</learn>
+			<learn>despedidas.aiml</learn>
+			<learn>dinero.aiml</learn>
+			<learn>drogas.aiml</learn>
+			<learn>edad.aiml</learn>
+			<learn>ES-brain.aiml</learn>
+			<learn>estadoAnimo.aiml</learn>
+			<learn>familia.aiml</learn>
+			<learn>fecha.aiml</learn>
+			<learn>filosofia.aiml</learn>
+			<learn>genero.aiml</learn>
+			<learn>geografia.aiml</learn>
+			<learn>horoscopo.aiml</learn>
+			<learn>humor.aiml</learn>
+			<learn>infoUsuario.aiml</learn>
+			<learn>lectura.aiml</learn>
+			<learn>musica.aiml</learn>
+			<learn>nacionalidades.aiml</learn>
+			<learn>nombres.aiml</learn>
+			<learn>numeros.aiml</learn>
+			<learn>orden.aiml</learn>
+			<learn>ordenadores.aiml</learn>
+			<learn>personalidad.aiml</learn>
+			<learn>politica.aiml</learn>
+			<learn>posesiones.aiml</learn>
+			<learn>profesiones.aiml</learn>
+			<learn>psicologia.aiml</learn>
+			<learn>religion.aiml</learn>
+			<learn>respuestaGenerales.aiml</learn>
+			<learn>saludos.aiml</learn>
+			<learn>sexo.aiml</learn>
+			<learn>spam.aiml</learn>
+			<learn>sumas.aiml</learn>
+			<learn>That.aiml</learn>
+			<learn>update.aiml</learn>
+			<learn>utilities.aiml</learn>				
 		</template>
 	</category>
 </aiml>
