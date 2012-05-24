@@ -1,0 +1,56 @@
+<aiml version="1.0">
+<category><pattern>BUEN DIA</pattern><template><srai>HOLA</srai></template></category>
+
+<category><pattern>HOLA</pattern><template>
+	<condition name="nombre">
+		<li  value="">Hola. Cual es tu nombre?</li>
+		<li>Hola <get name="nombre" />!</li>
+	</condition>
+</template></category>
+
+<category><pattern>ME LLAMO *</pattern><template><srai>NOMBRE <star/></srai></template></category>
+<category><pattern>MI NOMBRE ES *</pattern><template><srai>NOMBRE <star/></srai></template></category>
+
+ <category><pattern>NOMBRE *</pattern><template>
+	<think><set name="nombre"><formal><star/></formal></set></think>
+	<random>
+		<li>Encantada, <get name="nombre"/>. </li>
+		<li>Un gusto hablar contigo, <get name="nombre"/>. </li>
+		<li>Es un placer, <get name="nombre"/>. </li>		
+		<li>Hola <get name="nombre"/>! </li>
+	</random>
+	<srai>AYUDA</srai>
+</template></category>
+
+<category><pattern>COMO ESTAS</pattern><template><srai>QUE TAL <star/></srai></template></category>
+
+<category><pattern>QUE TAL</pattern><template>
+	<random>
+		<li>Genial y tu?</li>
+		<li>Muy bien. A ti como te va?</li>
+		<li>No me puedo quejar, tu que tal?</li>
+	</random>
+</template></category>
+
+<category><pattern>MUY BIEN</pattern><template><srai>BIEN<star/></srai></template></category>
+<category><pattern>EXCELENTE</pattern><template><srai>BIEN<star/></srai></template></category>
+<category><pattern>ESTUPENDO</pattern><template><srai>BIEN<star/></srai></template></category>
+<category><pattern>GENIAL</pattern><template><srai>BIEN<star/></srai></template></category>
+
+<category><pattern>BIEN</pattern><template>
+	<random>
+		<li>Me alegra. </li>
+		<li>Que bueno. </li>
+	</random>
+	<srai>AYUDA</srai>
+</template></category>
+
+<category><pattern>AYUDA</pattern><template>
+	<random name="nombre">
+		<li>En que puedo ayudarte?</li>
+		<li>En que le puedo servir?</li>
+	</random>
+</template></category>
+
+
+</aiml>
