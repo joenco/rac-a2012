@@ -3,7 +3,7 @@ import aiml
 def main():
          
     rac = aiml.Kernel()
-    rac.learn("RAC.xml")
+    rac.learn("RAC.aiml")
     rac.respond("LOAD AIML")
     
     while True:

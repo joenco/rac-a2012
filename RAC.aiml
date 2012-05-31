@@ -3,6 +3,8 @@
 		<pattern>LOAD AIML</pattern>
 		<template>
 			<learn>aiml-std/saludo.aiml</learn>
+			<learn>aiml-std/animos.aiml</learn>
+			<learn>aiml-std/despedida.aiml</learn>
 		</template>
 	</category>
 </aiml>
