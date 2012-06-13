@@ -1,0 +1,29 @@
+<aiml version="1.0">
+
+
+<category><pattern>COMO ESTAS</pattern><template><srai>QUE TAL <star/></srai></template></category>
+<category><pattern>COMO TE SIENTES</pattern><template><srai>QUE TAL <star/></srai></template></category>
+
+<category><pattern>QUE TAL</pattern><template>
+	<random>
+		<li>Genial y tu?</li>
+		<li>Muy bien. A ti como te va?</li>
+		<li>No me puedo quejar, tu que tal?</li>
+	</random>
+</template></category>
+
+
+<category><pattern>* BIEN</pattern><template><srai>BIEN<star/></srai></template></category>
+<category><pattern>EXCELENTE</pattern><template><srai>BIEN<star/></srai></template></category>
+<category><pattern>ESTUPENDO</pattern><template><srai>BIEN<star/></srai></template></category>
+<category><pattern>GENIAL</pattern><template><srai>BIEN<star/></srai></template></category>
+
+<category><pattern>BIEN</pattern><template>
+	<random>
+		<li>Me alegra. </li>
+		<li>Que bueno. </li>
+	</random>
+	<srai>AYUDA</srai>
+</template></category>	
+	
+</aiml>

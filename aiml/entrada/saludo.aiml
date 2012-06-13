@@ -1,0 +1,38 @@
+<aiml version="1.0">
+
+
+<category><pattern>ALO</pattern><template><srai>HOLA</srai></template></category>		
+<category><pattern>BUEN DIA</pattern><template><srai>HOLA</srai></template></category>
+
+<category><pattern>HOLA</pattern><template>
+	<condition name="nombre">
+		<li  value="">Hola. Cual es tu nombre?</li>
+		<li>Hola <get name="nombre" />!</li>
+	</condition>
+</template></category>
+
+
+<category><pattern>ME LLAMO *</pattern><template><srai>NOMBRE <star/></srai></template></category>
+<category><pattern>MI NOMBRE ES *</pattern><template><srai>NOMBRE <star/></srai></template></category>
+
+ <category><pattern>NOMBRE *</pattern><template>
+	<think><set name="nombre"><formal><star/></formal></set></think>
+	<random>
+		<li>Encantada, <get name="nombre"/>. </li>
+		<li>Un gusto hablar contigo, <get name="nombre"/>. </li>
+		<li>Es un placer, <get name="nombre"/>. </li>		
+		<li>Hola <get name="nombre"/>! </li>
+	</random>
+	<srai>AYUDA</srai>
+</template></category>
+
+
+<category><pattern>AYUDA</pattern><template>
+	<random name="nombre">
+		<li>En que puedo ayudarte?</li>
+		<li>En que le puedo servir?</li>
+	</random>
+</template></category>
+
+
+</aiml>
