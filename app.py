@@ -3,17 +3,19 @@ import aiml
 import win32com.client
 from wx._controls import TE_PROCESS_ENTER
  
-class Chat(wx.Frame):
+class Aplicacion(wx.Frame):
     def __init__(self):
         self.Ventana()
+        self.Agente()
         
-        self.lector = _voice = win32com.client.Dispatch("SAPI.SpVoice")
-        self.lector.Speak("Bienvenido al Sistema!!!")
-        
-        self.agente = aiml.Kernel()
+    def Agente(self):
+        self.agente = aiml.Kernel()     
         self.agente.learn("data.xml")
         self.agente.respond("LOAD AIML")
         
+        self.lector = win32com.client.Dispatch("SAPI.SpVoice")
+        self.lector.Speak("Bienvenido al Sistema!!!")
+
     def Ventana(self):
         wx.Frame.__init__(self, None, style= wx.RESIZE_BORDER | wx.SYSTEM_MENU | wx.CAPTION | wx.CLOSE_BOX)
         
@@ -25,7 +27,7 @@ class Chat(wx.Frame):
         
         self.Bind(wx.EVT_TEXT_ENTER, self.Pregunta, self.linea)
         self.Bind(wx.EVT_BUTTON, self.Pregunta, self.boton)
- 
+        
     def Pregunta(self, evento):
         persona = self.linea.GetValue()
         self.texto.AppendText("> " + persona + "\n")

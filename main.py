@@ -1,13 +1,13 @@
 import wx
-from chat import Chat
+from app import Aplicacion
 
 if __name__ == '__main__':
     app = wx.PySimpleApp()
 
-    ventana = Chat()
-    ventana.SetTitle("Representante de Atencion al Cliente")
-    ventana.SetSize((320,480))
-    ventana.Centre()
-    ventana.Show()
+    chat = Aplicacion()
+    chat.SetTitle("Representante de Atencion al Cliente")
+    chat.SetSize((320,480))
+    chat.Centre()
+    chat.Show()
 
     app.MainLoop()
