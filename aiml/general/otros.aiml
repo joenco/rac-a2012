@@ -1,4 +1,5 @@
-<aiml version="1.0">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
 
 
 <category><pattern>COMO ESTAS</pattern><template><srai>QUE TAL <star/></srai></template></category>

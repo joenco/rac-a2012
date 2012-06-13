@@ -1,4 +1,5 @@
-<aiml version="1.0">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
 	
 <category><pattern>CHAO</pattern><template><srai>ADIOS</srai></template></category>
 <category><pattern>NOS VEMOS</pattern><template><srai>ADIOS</srai></template></category>
