@@ -1,6 +1,9 @@
 import wx
-from app import Aplicacion
-
+if False:
+    from appAIML import Aplicacion
+else:
+    from appRS import Aplicacion
+    
 if __name__ == '__main__':
     app = wx.PySimpleApp()
 
