@@ -1,5 +1,3 @@
-// Learn stuff about our users.
-
 + mi nombre es *
 - <set name=<formal>>Es un gusto conocerte, <get name>.
 - <set name=<formal>><get name>, Encantado.
