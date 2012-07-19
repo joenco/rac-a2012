@@ -13,6 +13,7 @@ class Aplicacion(wx.Frame):
         self.agente.load_directory("./recursos")
         self.agente.sort_replies()
         self.lector = Dispatch("SAPI.SpVoice")
+        self.lector.Speak("Bienvenido al Sistema!")
 
     def Ventana(self):
         wx.Frame.__init__(self, None, style= wx.RESIZE_BORDER | wx.SYSTEM_MENU | wx.CAPTION | wx.CLOSE_BOX)

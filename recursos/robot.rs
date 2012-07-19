@@ -1,6 +1,6 @@
-+ (@as) te llamas[*]|
++ (@question) te llamas[*]|
 ^ (@which) es tu nombre[*]
 - Me llamo <bot name> y tú?
 
-+ (@who|@that) eres[*]
++ (@question) eres[*]
 - <bot about>
